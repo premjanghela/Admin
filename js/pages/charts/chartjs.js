@@ -12,16 +12,16 @@ function getChartJs(type) {
         config = {
             type: 'line',
             data: {
-                labels: ["January", "February", "March", "April", "May", "June", "July"],
+                labels: ["2018-19", "2019-20", "2020-21", "2021-22", "2022-23", "2023-24", "2024-25"],
                 datasets: [{
-                    label: "My First dataset",
-                    data: [65, 59, 80, 81, 56, 55, 40],
+                    label: "Total Student dataset",
+                    data: [109, 120, 114, 118, 122, 127, 130],
                     borderColor: 'rgba(0, 188, 212, 0.75)',
                     backgroundColor: 'rgba(0, 188, 212, 0.3)',
                     pointBorderColor: 'rgba(0, 188, 212, 0)',
                     pointBackgroundColor: 'rgba(0, 188, 212, 0.9)',
                     pointBorderWidth: 1
-                }, {
+                }, /*{
                         label: "My Second dataset",
                         data: [28, 48, 40, 19, 86, 27, 90],
                         borderColor: 'rgba(233, 30, 99, 0.75)',
@@ -29,7 +29,8 @@ function getChartJs(type) {
                         pointBorderColor: 'rgba(233, 30, 99, 0)',
                         pointBackgroundColor: 'rgba(233, 30, 99, 0.9)',
                         pointBorderWidth: 1
-                    }]
+                    }*/
+					]
             },
             options: {
                 responsive: true,
@@ -41,16 +42,18 @@ function getChartJs(type) {
         config = {
             type: 'bar',
             data: {
-                labels: ["January", "February", "March", "April", "May", "June", "July"],
+                labels: ["General", "OBC", "SC", "ST", "PwD दिव्यांग", "Male", "Female"],
                 datasets: [{
-                    label: "My First dataset",
-                    data: [65, 59, 80, 81, 56, 55, 40],
+                    label: "Student dataset",
+                    data: [0, 120, 3, 7, 2, 78, 52],
                     backgroundColor: 'rgba(0, 188, 212, 0.8)'
-                }, {
+                }, 
+				/*{
                         label: "My Second dataset",
-                        data: [28, 48, 40, 19, 86, 27, 90],
+                        data: [0, 48, 40, 19, 86, 27, 90],
                         backgroundColor: 'rgba(233, 30, 99, 0.8)'
-                    }]
+                    }*/
+					]
             },
             options: {
                 responsive: true,
